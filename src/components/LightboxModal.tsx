@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { X, ChevronLeft, ChevronRight, Instagram, Facebook } from 'lucide-react';
 import { GalleryItem, CAFE_INFO } from '../data/cafeData';
+import { BrandLogo } from './BrandLogo';
 
 interface LightboxModalProps {
   item: GalleryItem | null;
@@ -50,9 +51,7 @@ export const LightboxModal: React.FC<LightboxModalProps> = ({
         {/* Top bar with count */}
         <div className="flex items-center justify-between px-6 py-4 border-b border-white/10 bg-[#0D0D0F]">
           <div className="flex items-center gap-3">
-            <span className="text-xs uppercase font-bold tracking-widest text-[#DE9B35]">
-              The Canna Cafe 815
-            </span>
+            <BrandLogo size="sm" />
             <span className="text-stone-500 text-xs">·</span>
             <span className="text-xs font-semibold tabular-nums text-stone-300">
               {currentIndex + 1} / {items.length}

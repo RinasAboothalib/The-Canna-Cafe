@@ -1,6 +1,7 @@
 import React from 'react';
 import { ShieldCheck, Compass, UtensilsCrossed, Beer, Calendar, MapPin, Gamepad2 } from 'lucide-react';
 import { CAFE_INFO, WEEKLY_SPECIALS } from '../data/cafeData';
+import { BrandLogo } from './BrandLogo';
 
 interface AboutSectionProps {
   isStandalonePage?: boolean;
@@ -12,12 +13,12 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ isStandalonePage = f
       {/* Standalone Page Header (bigman-demo style .phead) */}
       {isStandalonePage && (
         <section className="phead">
-          <div className="max-w-7xl mx-auto px-6 sm:px-8 text-center">
-            <span className="text-xs uppercase font-bold tracking-[0.25em] text-[#DE9B35] mb-3 block">
-              Inside The Hemp Center · Rockford, IL
-            </span>
-            <h1 className="text-4xl sm:text-6xl font-extrabold text-[#FAF8F5] tracking-tight max-w-4xl mx-auto leading-tight text-balance">
-              The Canna Cafe Story.
+          <div className="max-w-7xl mx-auto px-6 sm:px-8 text-center flex flex-col items-center">
+            <div className="mb-6">
+              <BrandLogo size="lg" />
+            </div>
+            <h1 className="text-3xl sm:text-5xl font-extrabold text-[#FAF8F5] tracking-tight max-w-4xl mx-auto leading-tight text-balance">
+              Our Story & Heritage
             </h1>
             <p className="mt-4 text-base sm:text-lg text-stone-300 max-w-2xl mx-auto leading-relaxed">
               Illinois’ premier hybrid cafe, craft bar, and botanical gathering space.

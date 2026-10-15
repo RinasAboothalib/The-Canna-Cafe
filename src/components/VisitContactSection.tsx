@@ -1,6 +1,7 @@
 import React, { useState, useMemo } from 'react';
 import { MapPin, Phone, Clock, Navigation, Send, CheckCircle2 } from 'lucide-react';
 import { CAFE_INFO } from '../data/cafeData';
+import { BrandLogo } from './BrandLogo';
 
 interface VisitContactSectionProps {
   isStandalonePage?: boolean;
@@ -69,12 +70,12 @@ export const VisitContactSection: React.FC<VisitContactSectionProps> = ({ isStan
       {/* Standalone Page Header (.phead) */}
       {isStandalonePage && (
         <section className="phead">
-          <div className="max-w-7xl mx-auto px-6 sm:px-8 text-center">
-            <span className="text-xs uppercase font-bold tracking-[0.25em] text-[#DE9B35] mb-3 block">
-              Rockford, Illinois · Area Code 815
-            </span>
-            <h1 className="text-4xl sm:text-6xl font-extrabold text-[#FAF8F5] tracking-tight max-w-4xl mx-auto leading-tight text-balance">
-              Visit The Canna Cafe.
+          <div className="max-w-7xl mx-auto px-6 sm:px-8 text-center flex flex-col items-center">
+            <div className="mb-6">
+              <BrandLogo size="lg" />
+            </div>
+            <h1 className="text-3xl sm:text-5xl font-extrabold text-[#FAF8F5] tracking-tight max-w-4xl mx-auto leading-tight text-balance">
+              Visit & Contact
             </h1>
             <p className="mt-4 text-base sm:text-lg text-stone-300 max-w-2xl mx-auto leading-relaxed">
               Located directly inside The Hemp Center at 6830 Spring Creek Road. Walk-ins always welcome.
@@ -223,13 +224,12 @@ export const VisitContactSection: React.FC<VisitContactSectionProps> = ({ isStan
                     <div className="w-10 h-10 rounded-full bg-[#DE9B35] text-[#0D0D0F] flex items-center justify-center font-bold mb-3 shadow-lg shadow-[#DE9B35]/30">
                       <MapPin className="w-5 h-5" />
                     </div>
-                    <h4 className="text-base font-bold text-white">The Canna Cafe 815</h4>
-                    <p className="text-xs text-stone-300 mt-1">
+                    <div className="mb-3">
+                      <BrandLogo size="sm" />
+                    </div>
+                    <p className="text-xs text-stone-300">
                       6830 Spring Creek Rd, Rockford, IL 61114
                     </p>
-                    <span className="text-[11px] text-[#DE9B35] font-semibold mt-1">
-                      Inside The Hemp Center
-                    </span>
                     <a
                       href={CAFE_INFO.address.googleMapsUrl}
                       target="_blank"
