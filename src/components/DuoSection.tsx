@@ -27,7 +27,7 @@ export const DuoSection: React.FC<DuoSectionProps> = ({ onNavigate }) => {
             {/* Background image with mask zoom */}
             <div className="absolute inset-0 z-0 overflow-hidden">
               <img
-                src="/src/assets/images/signature_cuban_sammy_1792125152221.jpg"
+                src="/images/cuban_sammy.jpg"
                 alt="The Cuban Sammy Panini with chips and pepperoncini"
                 className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out brightness-[0.65]"
                 referrerPolicy="no-referrer"
@@ -65,7 +65,7 @@ export const DuoSection: React.FC<DuoSectionProps> = ({ onNavigate }) => {
             {/* Background image with mask zoom */}
             <div className="absolute inset-0 z-0 overflow-hidden">
               <img
-                src="/src/assets/images/craft_beer_spotlight_1792125154432.jpg"
+                src="/images/craft_beer.jpg"
                 alt="Cold craft beer with condensation and colorful mural"
                 className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out brightness-[0.62]"
                 referrerPolicy="no-referrer"

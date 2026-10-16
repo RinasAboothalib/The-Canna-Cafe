@@ -51,7 +51,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ isStandalonePage = f
             <div className="lg:col-span-7 relative">
               <div className="relative rounded-3xl overflow-hidden border border-white/10 shadow-2xl bg-stone-900 group">
                 <img
-                  src="/src/assets/images/hero_canna_cafe_atmosphere_1792125152810.jpg"
+                  src="/images/hero_atmosphere.jpg"
                   alt="Inside The Canna Cafe & The Hemp Center Rockford"
                   className="w-full h-[400px] sm:h-[480px] object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out"
                   referrerPolicy="no-referrer"

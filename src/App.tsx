@@ -70,7 +70,7 @@ export default function App() {
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
                   <div className="lg:col-span-7 rounded-3xl overflow-hidden bg-stone-900 border border-white/10 shadow-2xl relative group">
                     <img
-                      src="/src/assets/images/canna_botanical_pumpkin_1792125154762.jpg"
+                      src="/images/canna_pumpkin.jpg"
                       alt="Autumn evenings and botanical pumpkin at The Canna Cafe"
                       className="w-full h-[380px] sm:h-[460px] object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out"
                       referrerPolicy="no-referrer"

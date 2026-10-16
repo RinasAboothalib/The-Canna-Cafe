@@ -14,7 +14,7 @@ export const Hero: React.FC<HeroProps> = ({ onExploreClick, onContactClick }) =>
       {/* Background cinematic photograph */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/src/assets/images/hero_canna_cafe_atmosphere_1792125152810.jpg"
+          src="/images/hero_atmosphere.jpg"
           alt="The Canna Cafe and bar lounge inside The Hemp Center in Rockford, Illinois"
           className="w-full h-full object-cover object-center scale-105 filter brightness-[0.42] contrast-[1.1] transition-transform duration-1000 ease-out"
           referrerPolicy="no-referrer"

@@ -68,7 +68,7 @@ export const MENU_ITEMS: MenuItem[] = [
     price: '$13.50',
     description: 'Slow-roasted pulled pork, smoked ham, melted Swiss cheese, tangy dill pickles, and stone-ground yellow mustard pressed on artisanal crusty bread. Served in a basket with Lay’s potato chips and whole pepperoncini.',
     badge: 'Guest Favorite',
-    image: '/src/assets/images/signature_cuban_sammy_1792125152221.jpg',
+    image: '/images/cuban_sammy.jpg',
     notes: 'Served with chips & pepperoncini'
   },
   {
@@ -78,7 +78,7 @@ export const MENU_ITEMS: MenuItem[] = [
     price: '$11.00',
     description: 'Freshly rolled maki filled with ripe Hass avocado, crisp garden cucumber, julienned carrots, and toasted sesame, drizzled with house spicy sauce, served with pink pickled ginger and soy sauce.',
     badge: 'Fresh Daily',
-    image: '/src/assets/images/veggie_sushi_rolls_1792125153783.jpg',
+    image: '/images/veggie_sushi.jpg',
     notes: 'Vegetarian · Prepared fresh daily'
   },
   {
@@ -115,7 +115,7 @@ export const MENU_ITEMS: MenuItem[] = [
     price: '$7.50',
     description: 'Hazy, tropical, juicy IPA brewed by Pollyanna Brewing / Mikerphone Brewing. Loaded with Citra and Mosaic hops. 6.5% ABV.',
     badge: 'Rotating Tap',
-    image: '/src/assets/images/craft_beer_spotlight_1792125154432.jpg',
+    image: '/images/craft_beer.jpg',
     notes: '21+ Only · 16 oz Can / Draft'
   },
   {
@@ -233,7 +233,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     id: 'gal-1',
     title: 'The Cuban Sammy Panini',
     category: 'food',
-    image: '/src/assets/images/signature_cuban_sammy_1792125152221.jpg',
+    image: '/images/cuban_sammy.jpg',
     aspect: 'landscape',
     description: 'Our signature slow-roasted pork and ham panini pressed crisp with Swiss cheese and dill pickles, served with potato chips.',
     caption: 'The Canna Cafe Kitchen Special'
@@ -242,7 +242,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     id: 'gal-2',
     title: 'The Canna Cafe Bar & Lounge',
     category: 'ambiance',
-    image: '/src/assets/images/hero_canna_cafe_atmosphere_1792125152810.jpg',
+    image: '/images/hero_atmosphere.jpg',
     aspect: 'landscape',
     description: 'The vibrant social atmosphere inside The Hemp Center on Spring Creek Rd featuring our colorful psychedelic mural and craft bar counter.',
     caption: 'Rockford, IL · 6830 Spring Creek Rd'
@@ -251,7 +251,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     id: 'gal-3',
     title: 'Fresh Veggie Sushi Roll Plate',
     category: 'food',
-    image: '/src/assets/images/veggie_sushi_rolls_1792125153783.jpg',
+    image: '/images/veggie_sushi.jpg',
     aspect: 'portrait',
     description: 'Handcrafted avocado, cucumber, and carrot veggie sushi rolls with spicy mayo drizzle and pickled ginger.',
     caption: 'Fresh daily culinary feature'
@@ -260,7 +260,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     id: 'gal-4',
     title: 'Craft Beer Spotlight & Drafts',
     category: 'beers',
-    image: '/src/assets/images/craft_beer_spotlight_1792125154432.jpg',
+    image: '/images/craft_beer.jpg',
     aspect: 'portrait',
     description: 'Rotating Illinois craft cans and draft taps including Zoned NEIPA, Irie IPA, Vera Pistachio Cream Ale, and Son of Juice.',
     caption: 'Chilled craft brewery selections'
@@ -269,7 +269,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     id: 'gal-5',
     title: 'Autumn Evenings at The Canna Cafe',
     category: 'ambiance',
-    image: '/src/assets/images/canna_botanical_pumpkin_1792125154762.jpg',
+    image: '/images/canna_pumpkin.jpg',
     aspect: 'landscape',
     description: 'Cozy autumn lounge atmosphere featuring our custom hand-carved glowing botanical pumpkin and warm cafe lighting.',
     caption: 'Warm autumn lounge vibes'
