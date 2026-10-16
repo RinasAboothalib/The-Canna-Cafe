@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Instagram, Facebook, Maximize2, ArrowUpRight, Camera } from 'lucide-react';
 import { GALLERY_ITEMS, GalleryItem, CAFE_INFO } from '../data/cafeData';
 import { LightboxModal } from './LightboxModal';
+import { BrandLogo } from './BrandLogo';
 
 interface GallerySectionProps {
   isStandalonePage?: boolean;
@@ -42,12 +43,12 @@ export const GallerySection: React.FC<GallerySectionProps> = ({ isStandalonePage
       {/* Standalone Page Header (.phead) */}
       {isStandalonePage && (
         <section className="phead">
-          <div className="max-w-7xl mx-auto px-6 sm:px-8 text-center">
-            <span className="text-xs uppercase font-bold tracking-[0.25em] text-[#DE9B35] mb-3 block">
-              Moments & Culinary Highlights
-            </span>
-            <h1 className="text-4xl sm:text-6xl font-extrabold text-[#FAF8F5] tracking-tight max-w-4xl mx-auto leading-tight text-balance">
-              Visual Archive.
+          <div className="max-w-7xl mx-auto px-6 sm:px-8 text-center flex flex-col items-center">
+            <div className="mb-6">
+              <BrandLogo size="lg" />
+            </div>
+            <h1 className="text-3xl sm:text-5xl font-extrabold text-[#FAF8F5] tracking-tight max-w-4xl mx-auto leading-tight text-balance">
+              Visual Archive
             </h1>
             <p className="mt-4 text-base sm:text-lg text-stone-300 max-w-2xl mx-auto leading-relaxed">
               Authentic snapshots of our Rockford cafe, craft brews, pressed sandwiches, and cozy lounge inside The Hemp Center.

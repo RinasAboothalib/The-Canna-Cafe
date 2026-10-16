@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Search, Info, Beer, UtensilsCrossed, Coffee, ShoppingBag } from 'lucide-react';
 import { MENU_ITEMS } from '../data/cafeData';
+import { BrandLogo } from './BrandLogo';
 
 interface MenuSectionProps {
   isStandalonePage?: boolean;
@@ -32,12 +33,12 @@ export const MenuSection: React.FC<MenuSectionProps> = ({ isStandalonePage = fal
       {/* Standalone Page Header (.phead) */}
       {isStandalonePage && (
         <section className="phead">
-          <div className="max-w-7xl mx-auto px-6 sm:px-8 text-center">
-            <span className="text-xs uppercase font-bold tracking-[0.25em] text-[#DE9B35] mb-3 block">
-              Prepared Fresh In-House
-            </span>
-            <h1 className="text-4xl sm:text-6xl font-extrabold text-[#FAF8F5] tracking-tight max-w-4xl mx-auto leading-tight text-balance">
-              The Canna Cafe Menu.
+          <div className="max-w-7xl mx-auto px-6 sm:px-8 text-center flex flex-col items-center">
+            <div className="mb-6">
+              <BrandLogo size="lg" />
+            </div>
+            <h1 className="text-3xl sm:text-5xl font-extrabold text-[#FAF8F5] tracking-tight max-w-4xl mx-auto leading-tight text-balance">
+              Handcrafted Menu
             </h1>
             <p className="mt-4 text-base sm:text-lg text-stone-300 max-w-2xl mx-auto leading-relaxed">
               Featuring our signature pressed Cuban Sammy, fresh veggie sushi rolls, cold regional craft drafts, and boutique wellness.

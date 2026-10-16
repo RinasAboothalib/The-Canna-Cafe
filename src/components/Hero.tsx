@@ -1,6 +1,7 @@
 import React from 'react';
 import { ArrowDown, MapPin, Clock, UtensilsCrossed, ArrowUpRight } from 'lucide-react';
 import { CAFE_INFO } from '../data/cafeData';
+import { BrandLogo } from './BrandLogo';
 
 interface HeroProps {
   onExploreClick: () => void;
@@ -25,13 +26,9 @@ export const Hero: React.FC<HeroProps> = ({ onExploreClick, onContactClick }) =>
 
       {/* Hero content container */}
       <div className="relative z-10 max-w-5xl mx-auto px-6 sm:px-8 text-center flex flex-col items-center">
-        {/* First Image Logo */}
-        <div className="mb-6 transform hover:scale-[1.02] transition-transform">
-          <img
-            src="/logo.svg"
-            alt="The Canna Cafe - Located Inside The Hemp Center"
-            className="h-16 sm:h-20 md:h-24 w-auto object-contain mx-auto drop-shadow-2xl"
-          />
+        {/* First Image Logo replacing website name */}
+        <div className="mb-8 transform hover:scale-[1.02] transition-transform">
+          <BrandLogo size="hero" />
         </div>
 
         {/* Main Heading: Required exact copy */}

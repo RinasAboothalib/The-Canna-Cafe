@@ -2,6 +2,7 @@ import React from 'react';
 import { Instagram, Facebook, MapPin, Phone, ArrowUp } from 'lucide-react';
 import { CAFE_INFO } from '../data/cafeData';
 import { PageId } from './Navbar';
+import { BrandLogo } from './BrandLogo';
 
 interface FooterProps {
   onNavigate?: (page: PageId) => void;
@@ -25,14 +26,10 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                 if (onNavigate) onNavigate('home');
                 scrollToTop();
               }}
-              className="text-left cursor-pointer"
+              className="text-left cursor-pointer inline-block"
               aria-label="The Canna Cafe - Back to home"
             >
-              <img
-                src="/logo.svg"
-                alt="The Canna Cafe - Located Inside The Hemp Center"
-                className="h-12 w-auto object-contain hover:opacity-90 transition-opacity"
-              />
+              <BrandLogo size="lg" />
             </button>
             <p className="text-xs sm:text-sm text-stone-400 max-w-sm leading-relaxed mt-4">
               Illinois’ premier hybrid cafe, craft bar, and social gathering space. Featuring pressed Cuban Sammys, fresh veggie sushi rolls, cold regional craft draft beers, and The Hemp Center dispensary boutique in Rockford.

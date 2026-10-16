@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, ArrowUpRight } from 'lucide-react';
+import { BrandLogo } from './BrandLogo';
 
 export type PageId = 'home' | 'menu' | 'about' | 'gallery' | 'visit';
 
@@ -47,18 +48,14 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate }) => {
     >
       <div className="max-w-7xl mx-auto px-6 sm:px-8">
         <div className="flex items-center justify-between gap-8">
-          {/* Zone 1: First image logo */}
+          {/* Zone 1: First image logo replacing website name */}
           <button
             type="button"
             onClick={() => handleLinkClick('home')}
-            className="flex items-center gap-2 select-none shrink-0 text-left focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#DE9B35] rounded-lg p-1 cursor-pointer"
+            className="flex items-center select-none shrink-0 text-left focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#DE9B35] rounded-lg cursor-pointer"
             aria-label="The Canna Cafe - Home"
           >
-            <img
-              src="/logo.svg"
-              alt="The Canna Cafe - Located Inside The Hemp Center"
-              className="h-10 sm:h-12 w-auto object-contain hover:opacity-90 transition-opacity"
-            />
+            <BrandLogo size="md" />
           </button>
 
           {/* Zone 2: 4-5 single-line nav links */}
