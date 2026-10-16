@@ -1,0 +1,6 @@
+{
+  "name": "The Canna Cafe 815",
+  "description": "Illinois' first-of-its-kind cafe, craft bar & botanical dispensary lounge located inside The Hemp Center in Rockford, IL.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
